@@ -17,7 +17,7 @@ A new flutter plugin project.
   s.dependency 'Flutter'
   s.dependency 'firebase_auth'
 #   s.dependency 'CryptoSwift', '~> 1.2.0'
-  s.framework = 'AuthenticationServices'
+  s.framework = ['AuthenticationServices','CryptoKit']
   s.weak_framework = 'CryptoKit'
   s.static_framework = true
   s.platform = :ios, '10.0'
