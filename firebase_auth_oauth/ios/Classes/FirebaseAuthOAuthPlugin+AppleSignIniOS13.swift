@@ -6,7 +6,9 @@
 //
 
 import AuthenticationServices
+#if canImport(CryptoKit)
 import CryptoKit
+#endif
 import FirebaseAuth
 
 
