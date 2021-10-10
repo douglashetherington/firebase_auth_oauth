@@ -55,13 +55,18 @@ extension FirebaseAuthOAuthViewController: ASAuthorizationControllerDelegate {
 		}
 	}
 	
-	@available(iOS 13, *)
-	private func sha256(_ input: String) -> String {
-		return SHA256.hash(data: Data(input.utf8)).compactMap {
-			return String(format: "%02x", $0)
-		}.joined()
-	}
-	
+    @available(iOS 13, *)
+    private func sha256(_ input: String) -> String {
+#if canImport(CryptoKit)
+        return SHA256.hash(data: Data(input.utf8)).compactMap {
+            return String(format: "%02x", $0)
+        }.joined()
+        #else
+        return ""
+#endif
+
+    }
+
 	// Adapted from https://auth0.com/docs/api-auth/tutorials/nonce#generate-a-cryptographically-random-nonce
 	private func randomNonceString(length: Int = 32) -> String {
 		precondition(length > 0)
