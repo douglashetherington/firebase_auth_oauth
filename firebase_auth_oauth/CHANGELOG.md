@@ -1,9 +1,33 @@
+## 1.2.2
+* Updated `firebase_auth` to Version ^4.1.1
+* Updated `firebase_core` to Version ^2.1.1
+* Update README
+
+## 1.2.1
+* Updated `firebase_auth` to Version ^4.1.1
+* Updated `firebase_core` to Version ^2.1.1
+
+## 1.2.0
+
+* **[Breaking Change]** Update minimum flutter version to `1.20.0`
+* Use latest `_web` plugin version
+
+## 1.1.0+1
+
+* Updated Android Example
+
+## 1.1.0
+
+* set minimum iOS version to 11.4
+
 ## 1.0.3
+
 * Added `signInOAuth` and `linkWithOAuth`
 * Updated `firebase_auth` to Version ^3.0.1
 * Updated `firebase_core` to Version ^1.4.0
 
 ## 1.0.2
+
 * Updated `firebase_auth` to Version ^2.0.0
 * Updated `firebase_core` to Version ^1.3.0
 

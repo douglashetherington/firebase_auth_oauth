@@ -1,6 +1,3 @@
-**Note:**
-**This plugin is not actively maintained as I am not working with Flutter anymore. Feel free to submit PRs and I will do my best to work on publishing them or reach out if you wish to be a maintainer.**
-
 # firebase_auth_oauth
 
 A Flutter plugin that makes it easy to perform OAuth sign in flows using FirebaseAuth. It also includes support for Sign in by Apple for Firebase.
@@ -18,9 +15,9 @@ OAuth flows are performed by opening pop-up on top of the application to allow t
 dependencies:
   flutter:
     sdk: flutter
-  firebase_auth: ^3.0.1
-  firebase_core: ^1.4.0
-  firebase_auth_oauth: ^1.0.3
+  firebase_auth: ^4.1.1
+  firebase_core: ^2.1.1
+  firebase_auth_oauth: ^1.2.2
 ```
 
 - Then in your project just call
